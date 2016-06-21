@@ -1,7 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-      <% if user_signed_in? %>
+
+
+<h1>Log in to Play Who Wants to be a Cajillionaire!</h1>
+     <% if user_signed_in? %>
 
       <li><%= link_to 'Sign Out', '/users/sign_out', method: :delete %></li>
       <% else %>
@@ -10,15 +10,8 @@
       <% end %>
       <% if current_user %>
         <li class="active"><a href="#"><%= current_user.email %> <span class="sr-only">(current)</span></a></li>
-        <% end %>
-  <title>CapstoneApp</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+      <% end %>
+      <% if user_signed_in? %>
 
-<%= yield %>
-
-</body>
-</html>
+      <%= link_to 'Start Game!', '/games/1' %>
+      <% end %>
