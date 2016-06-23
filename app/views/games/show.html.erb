@@ -1,7 +1,10 @@
 <h1>Welcome to Who Want's to be a Cajillionaire!!!</h1>
 
-<p><%= @question.id%>). <%= @question.content%></p>
-<p><%= @question.choices %></p>
+<h2><%= @question.id%>). <%= @question.content%></h2>
+<h3><%= @question.choices[0].content %> <%= link_to 'Is This Your Final Answer???', '/games' %></h3>
+<h3><%= @question.choices[1].content %> <%= link_to 'Is This Your Final Answer???', '/games/2' %></h3>
+<h3><%= @question.choices[2].content %><%= link_to 'Is This Your Final Answer???', '/games' %></h3>
+<h3><%= @question.choices[3].content %><%= link_to 'Is This Your Final Answer???', '/games' %></h3>
 
 
 
