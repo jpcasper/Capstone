@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-      <% if user_signed_in? %>
+      <% if user_signed_in? %> 
 
       <li><%= link_to 'Sign Out', '/users/sign_out', method: :delete %></li>
       <% else %>
@@ -10,7 +10,7 @@
       <% end %>
       <% if current_user %>
         <li class="active"><a href="#"><%= current_user.email %> <span class="sr-only">(current)</span></a></li>
-        <% end %>
+        <% end %> 
   <title>CapstoneApp</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
@@ -22,3 +22,5 @@
 
 </body>
 </html>
+
+

@@ -1,1 +1,17 @@
 <h1>Questions</h1>
+
+<h1>Log in to Play Who Wants to be a Cajillionaire!</h1>
+     <% if user_signed_in? %>
+
+      <li><%= link_to 'Sign Out', '/users/sign_out', method: :delete %></li>
+      <% else %>
+      <li><%= link_to 'Sign In', '/users/sign_in'%></li>
+      <li><%= link_to 'Sign Up', '/users/sign_up'%></li>
+      <% end %>
+      <% if current_user %>
+        <li class="active"><a href="#"><%= current_user.email %> <span class="sr-only">(current)</span></a></li>
+      <% end %>
+      <% if user_signed_in? %>
+
+      <h1><%= link_to 'Click Here If You Want To Be....A Cajillionaire!!!', '/questions/1' %></h1>
+      <% end %>
