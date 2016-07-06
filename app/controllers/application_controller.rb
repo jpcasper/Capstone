@@ -4,15 +4,8 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def current_game
-    @choices = @questions.choices.current_user
-        Answer.create(
-        game_id: params[:game_id], #make this dynamic
-        choice_id: params[:choice_id],
-        user_id: current_user.id
-        )
-    @correct_answer = @choice.question.choices.where(correct: "true")
-     # @answers = user_id.game_id.choice_id
-
-
+    Game.where(user_id: current_user.id).last
   end
+  helper_method :current_game
+
 end

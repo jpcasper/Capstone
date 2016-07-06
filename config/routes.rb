@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 get '/games' => 'games#index'
 get '/games/new' => 'games#new'
 
-post '/games' => 'games#create'
+get '/new_game', to: 'games#new_game', as: 'create_game'
 
 get 'games/:id' => 'games#show'
 get 'games/:id' => 'games#edit'
@@ -27,5 +27,5 @@ delete 'questions/:id' => 'questions#destroy'
 
 
 get '/check/:choice_id' => 'questions#check'
-get '/next_question' => 'question#next'
+get '/next_question' => 'questions#next'
 end

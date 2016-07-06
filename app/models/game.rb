@@ -3,4 +3,6 @@ class Game < ActiveRecord::Base
   has_many :answers
   has_many :choices, through: :answers
   has_many :questions, through: :choices
+
+  validates :user_id, presence: true
 end

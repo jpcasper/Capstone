@@ -1,6 +1,6 @@
 <h1>Welcome to Who Want's to be a Cajillionaire!!!</h1>
 
-<h2><%= @questions.id%>). <%= @questions.content%></h2>
+<h2><%= @question.id%>). <%= @question.content%></h2>
 <h3><%= link_to @choices[0].content, "/check/#{@choices[0].id}" %></h3>
 <h3><%= link_to @choices[1].content, "/check/#{@choices[1].id}" %></h3>
 <h3><%= link_to @choices[2].content, "/check/#{@choices[2].id}" %></h3>
