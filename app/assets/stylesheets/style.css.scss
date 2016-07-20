@@ -1,0 +1,20 @@
+body {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  background-image: url(readers-leaders.jpg);
+  color: white;
+}
+
+.test {
+  -webkit-animation: rubberBand 15s;
+  -moz-animation: rubberBand 15s;
+  -o-animation: rubberBand 15s;
+  animation: rubberBand 15s;
+}
+h1 {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+ color: red;
+}
+
+img {
+  position: center;
+}

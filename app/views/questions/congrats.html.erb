@@ -1,12 +1,15 @@
 
 
-<!-- <h1>Log in to Play Who Wants to be a Cajillionaire!</h1> -->
 
-      <% if user_signed_in? %>
 
-            <h1 id="rubber" align=center><%= link_to 'Click Here If You Want To Be....A Cajillionaire!!!', '/next_question' %></h1>
-      <% end %>
+<h1 class="animated infinite pulse" align=center>Cajillionaire Status!!!!!!!!!!!!</h1>
 
+
+<h2 class="animated tada" align=center>Congratulations!!!!! You are now...a Cajillionaire!!!!</h2>
+
+<h3 align=center>Can I borrow a dollar???</h3>
+
+<h4><%= link_to "Try your luck again!", "/games" %></h4>
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -18,20 +21,19 @@
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-
     <div class="item active">
-      <img src="http://thumbs.dreamstime.com/z/businessman-playing-flute-front-laptop-which-flying-money-isolated-white-background-young-man-shirt-tie-plays-32425884.jpg" alt="...">
-      <div class="carousel-caption">
-    
+      <img src="https://i.ytimg.com/vi/x67ICKUNdw0/maxresdefault.jpg" alt="...">
+      <div class="Cha-Ching!!!!">
+        ...
       </div>
     </div>
     <div class="item">
-      <img src="https://michiganlottery.files.wordpress.com/2014/12/man-with-money-raining.jpg" alt="...">
-      <div class="carousel-caption">
-    
+      <img src="" alt="...">
+      <div class="Cajillionaire Status!!!">
+        ...
       </div>
     </div>
- 
+    ...
   </div>
 
   <!-- Controls -->
@@ -44,7 +46,3 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-
-<% @games.each do |game| %>
-  <h1><%= game.user.email %> -- <%= game.score %></h1>
-<% end %>

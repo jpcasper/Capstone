@@ -1,7 +1,58 @@
-<h1>Welcome to Who Want's to be a Cajillionaire!!!</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="animate.min.css">
+</head>
+<body>
+<font color="red"><h1 class="animated infinite pulse" align=center>Welcome to Who Want's to be a Cajillionaire!!!</h1></font>
 
-<h2><%= @question.id%>). <%= @question.content%></h2>
-<h3><%= link_to @choices[0].content, "/check/#{@choices[0].id}" %></h3>
-<h3><%= link_to @choices[1].content, "/check/#{@choices[1].id}" %></h3>
-<h3><%= link_to @choices[2].content, "/check/#{@choices[2].id}" %></h3>
-<h3><%= link_to @choices[3].content, "/check/#{@choices[3].id}" %></h3>
+<h4><%= link_to "Start Over Here!", "/reset" %></h4>
+
+
+
+
+<h2 align="center"><% @question.id%> <%= @question.content%></h2>
+<div class="container">
+<div style="float:left;"><h3 class="animated bounceInRight"><%= link_to @choices[0].content, "/check/#{@choices[0].id}" %></h3></div>
+<div style="float:right;"><h3 class="animated bounceInLeft"><%= link_to @choices[1].content, "/check/#{@choices[1].id}" %></h3></div>
+<br>
+<br>
+<br>
+<div style="float:left;"><h3 class="animated bounceInRight"><%= link_to @choices[2].content, "/check/#{@choices[2].id}" %></h3></div>
+<div style="float:right;"><h3 class="animated bounceInLeft"><%= link_to @choices[3].content, "/check/#{@choices[3].id}" %></h3></button></div>
+  
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2 class="animated bounceInUp" id="prize" align="center"><%= @score %></h2>
+
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+

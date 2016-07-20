@@ -3,13 +3,22 @@ class GamesController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @questions = Question.all
-   
+    if current_user
+      @games = Game.where(user_id: current_user.id)
+    else
+      @games = Game.all
+    end
   end
 
   def show
     @question = Question.find(params[:id])
     @choices = @question.choices
+  end
+
+    def fifty_fifty
+    if @choice.correct == "false"
+      @choice.pop
+    end
   end
 
 
@@ -21,6 +30,12 @@ class GamesController < ApplicationController
     else
       redirect_to '/sign_in'
     end
+  end
+
+  def reset
+    Game.create(user_id: current_user.id)
+    redirect_to '/games'
+    
   end
 
   # def check

@@ -8,4 +8,9 @@ class ApplicationController < ActionController::Base
   end
   helper_method :current_game
 
+  def fifty_fifty
+    if @choices.correct == "false"
+      @choices.pop
+    end
+  end
 end

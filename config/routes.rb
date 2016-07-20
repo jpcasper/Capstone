@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'games#index'
 
+get '/reset' => 'games#reset'
+
 get '/games' => 'games#index'
 get '/games/new' => 'games#new'
 
@@ -28,4 +30,6 @@ delete 'questions/:id' => 'questions#destroy'
 
 get '/check/:choice_id' => 'questions#check'
 get '/next_question' => 'questions#next'
+get 'congrats' => 'questions#congrats'
+
 end

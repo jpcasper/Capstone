@@ -18,6 +18,10 @@ gem 'figaro'
 gem 'devise'
 gem 'faker'
 gem 'seed_dump'
+gem 'quiet_assets'
+gem 'animate-rails'
+gem 'chartkick'
+gem 'bootstrap-sass'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

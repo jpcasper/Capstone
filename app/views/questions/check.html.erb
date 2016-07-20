@@ -1,7 +1,10 @@
-<h2><%= @correct_answer %></h2>
+<% @correct_answer.each do |choice| %>
+<font color="white"><h2 class="animated fadeIn" align=center id="test">Correct Choice: <%= choice.content %></h2>
+<% end %>
 
+<h3 align=center><%= @message %></h3>
+<font color="red"><h4 class="animated infinite tada" align=center>Your Score: <%= @score %></h4></font>
 
-<p><%= @message %></p>
-<p>Your Score: <%= @score %></p>
+<h2 align=center><%= link_to "Next Question", "/next_question" %></h2>
 
-<%= link_to "Next Question", "/next_question" %>
+<img align="center" src="http://steelcloset.com/wp-content/uploads/2010/02/clip_image0022.gif" alt="..." align="right">

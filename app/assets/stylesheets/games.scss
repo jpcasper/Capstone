@@ -1,3 +1,19 @@
 // Place all the styles related to the games controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.prize {
+  -webkit-animation: rubberBand 1s;
+  -moz-animation: rubberBand 1s;
+  -o-animation: rubberBand 1s;
+  animation: rubberBand 15s;
+}
+// body {
+//   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+//   color: white; 
+//   background-image: url(mind-on-my-money.jpg);
+// }
+
+btn btn-primary btn-lg {
+  color: white;
+}
