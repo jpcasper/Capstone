@@ -4,7 +4,7 @@
 
       <% if user_signed_in? %>
 
-            <h1 id="rubber" align=center><%= link_to 'Click Here If You Want To Be....A Cajillionaire!!!', '/next_question' %></h1>
+            <h3 class="animated infinite pulse"  align=center><%= link_to 'Click Here If You Want To Be....A Cajillionaire!!!', '/next_question' %></h3>
       <% end %>
 
 
@@ -20,7 +20,7 @@
   <div class="carousel-inner" role="listbox">
 
     <div class="item active">
-      <img src="http://thumbs.dreamstime.com/z/businessman-playing-flute-front-laptop-which-flying-money-isolated-white-background-young-man-shirt-tie-plays-32425884.jpg" alt="...">
+      <img src="http://www.robinmhaney.com/wp-content/uploads/2015/07/man-with-money.jpg" alt="...">
       <div class="carousel-caption">
     
       </div>
@@ -46,5 +46,5 @@
 </div>
 
 <% @games.each do |game| %>
-  <h1><%= game.user.email %> -- <%= game.score %></h1>
+  <h6 class="animated fadeInRight"><%= game.user.email %> -- <%= game.score %></h6 class="animated fadeInRight">
 <% end %>

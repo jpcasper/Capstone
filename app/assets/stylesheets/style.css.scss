@@ -1,20 +1,30 @@
 body {
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-  background-image: url(readers-leaders.jpg);
-  color: white;
+  background-image: url(White-Texture-HD-Backgrounds-1.jpg);
+
 }
 
-.test {
-  -webkit-animation: rubberBand 15s;
-  -moz-animation: rubberBand 15s;
-  -o-animation: rubberBand 15s;
-  animation: rubberBand 15s;
-}
-h1 {
-  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
- color: red;
+
+// h1 {
+//   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+//  color: red;
+// }
+
+a:link, a:visited {
+    background-color: #ffffff;
+    color: brown;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
 }
 
-img {
-  position: center;
+
+
+.clock {
+   width:  image-width;
+   margin: 0 auto;
 }
+
+

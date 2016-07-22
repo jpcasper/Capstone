@@ -13,7 +13,7 @@ class QuestionsController < ApplicationController
 
     
     index = current_game.answers.select{ |answer| answer.choice.correct == "true" }.count
-    score = ["$0","$100,000", "$250,000","$500,000","$750,000","$1,000,000","$100,000,000", "$250,000,000", "$500,000,000", "$100,000,000", "$500,000,000", "1,000,000,000", "CAJILLIONAIRE STATUS!!!!!!!!!!"]
+    score = ["$0","$100,000", "$250,000","$500,000","$750,000","$1,000,000","$100,000,000", "$250,000,000", "$500,000,000", "$100,000,000", "$500,000,000", "CAJILLIONAIRE STATUS!!!!!!!!!!"]
     
     @score = score[index]
 
@@ -35,7 +35,7 @@ class QuestionsController < ApplicationController
     @correct_answer = @choice.question.choices.where(correct: "true")
 
     index = current_game.answers.select{ |answer| answer.choice.correct == "true" }.count
-    score = ["$0","$100,000", "$250,000","$500,000","$750,000","$1,000,000","$100,000,000", "$250,000,000", "$500,000,000", "$100,000,000", "$500,000,000", "1,000,000,000", "CAJILLIONAIRE STATUS!!!!!!!!!!"]
+    score = ["$0","$100,000", "$250,000","$500,000","$750,000","$1,000,000","$100,000,000", "$250,000,000", "$500,000,000", "$100,000,000", "$500,000,000", "CAJILLIONAIRE STATUS!!!!!!!!!!"]
     
     @score = score[index]
 
@@ -51,7 +51,7 @@ class QuestionsController < ApplicationController
       @message = "You got it correct, you are one step closer to becoming a cajillionaire!"
     
     else
-      @message = "You got it wrong, Go back to school"
+      redirect_to '/reset'
     end
   end
 
